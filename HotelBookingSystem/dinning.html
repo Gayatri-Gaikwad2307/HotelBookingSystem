@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/dinning.css" />
+
+  <title>OFFICIAL WEBSITE OF ROYAL PALACE</title>
+</head>
+
+<body>
+  <div class="nav" id="navbar">
+    <div class="nav_bar">
+      <div class="logo">
+        <a href="#"><img src="images/logo_main.png" alt="logo" /></a>
+      </div>
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav_links" id="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="homepage.html#service">Services</a></li>
+      <li><a href="homepage.html#book">Rooms</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Dinning</a></li>
+      <li><a href="homepage.html#about">About</a></li>
+      <li><a href="homepage.html#contact">Contact</a></li>
+    </ul>
+    <a class="btn nav_btn" href="#book">Book Now</a>
+  </div>
+
+  <div class="container">
+    <h2>SPECIALITY OF ROYAL PALACE</h2>
+    <div id="menu" class="menu-grid">
+      <!-- Menu items will be dynamically generated here -->
+    </div>
+
+    <div id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically generated here -->
+      </ul>
+      <p>Total: ₹<span id="total">0.00</span></p> <!-- Display total amount in rupees -->
+      <button onclick="openCheckoutModal()">Place Order</button>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCheckoutModal()">&times;</span>
+      <h2>Place Your Order</h2>
+      <form id="checkout-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/dinning.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
